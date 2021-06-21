@@ -1,5 +1,10 @@
 <template>
-  <div class="page login"></div>
+  <div class="page login">
+    <div class="form">
+      <p class="title">ログイン</p>
+      <FormLogin />
+    </div>
+  </div>
 </template>
 
 <script>
