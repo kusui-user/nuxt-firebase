@@ -1,5 +1,9 @@
 <template>
-  <button class="button button-link"></button>
+  <button v-bind="$attrs" class="button button-link" @click="$emit('click')">
+    <span class="label">
+      {{ label }}
+    </span>
+  </button>
 </template>
 
 <script>
