@@ -1,5 +1,16 @@
 <template>
-  <form class="form form-login" @submit.prevent></form>
+  <form class="form form-login" @submit.prevent>
+    <FormItemInput v-model="email" type="text" placeholder="メールアドレス" />
+    <FormItemInput
+      v-model="password"
+      type="password"
+      placeholder="パスワード"
+    />
+    <div class="button">
+      <nuxt-link to="/register" class="link">アカウントを作成</nuxt-link>
+      <FormItemButton type="submit" label="次へ" @click="logint" />
+    </div>
+  </form>
 </template>
 
 <script>
