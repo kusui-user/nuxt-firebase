@@ -1,5 +1,41 @@
 <template>
-  <form class="form form-register-profile" @submit.prevent></form>
+  <form class="form form-register-profile" @submit.prevent>
+    <FormItemIcon :img="postData.thumbnail" type="file" @change="changeImg()" />
+    <div class="content">
+      <div class="sns">
+        <IconBrand itemStatus="google" />
+        <IconBrand itemStatus="twitter" />
+        <IconBrand itemStatus="facebook" />
+      </div>
+      <div class="form">
+        <FormItemInput v-model="name" placeholder="ユーザー名" type="text" />
+        <FormItemInput
+          v-model="mail"
+          placeholder="メールアドレス"
+          type="email"
+        />
+        <div class="input">
+          <FormItemInput
+            v-model="password"
+            placeholder="パスワード"
+            type="password"
+          />
+          <FormItemInput
+            v-model="password"
+            placeholder="パスワード(確認)"
+            type="password"
+          />
+        </div>
+        <p class="placeholder">
+          半角英字、数字、記号を組み合わせて8文字以上で入力してください
+        </p>
+      </div>
+    </div>
+    <div class="button">
+      <nuxt-link to="/login" class="link">代わりにログイン</nuxt-link>
+      <FormItemButton type="submit" @click="register" label="次へ" />
+    </div>
+  </form>
 </template>
 
 <script>
