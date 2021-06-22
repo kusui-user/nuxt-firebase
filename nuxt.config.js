@@ -62,12 +62,12 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: "AIzaSyCoNNo9b_saSnsaTKeYJseOWOPp6llV34Y",
-          authDomain: "nuxt-app-6ffca.firebaseapp.com",
-          projectId: "nuxt-app-6ffca",
-          storageBucket: "nuxt-app-6ffca.appspot.com",
-          messagingSenderId: "568178615405",
-          appId: "1:568178615405:web:e0244d169159ddb95acb64"
+          apiKey: 'AIzaSyCoNNo9b_saSnsaTKeYJseOWOPp6llV34Y',
+          authDomain: 'nuxt-app-6ffca.firebaseapp.com',
+          projectId: 'nuxt-app-6ffca',
+          storageBucket: 'nuxt-app-6ffca.appspot.com',
+          messagingSenderId: '568178615405',
+          appId: '1:568178615405:web:e0244d169159ddb95acb64',
         },
         services: {
           auth: true,
