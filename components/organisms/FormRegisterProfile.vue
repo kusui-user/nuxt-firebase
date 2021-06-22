@@ -3,9 +3,9 @@
     <FormItemIcon :img="postData.thumbnail" type="file" @change="changeImg()" />
     <div class="content">
       <div class="sns">
-        <IconBrand itemStatus="google" />
-        <IconBrand itemStatus="twitter" />
-        <IconBrand itemStatus="facebook" />
+        <IconBrand item-status="google" />
+        <IconBrand item-status="twitter" />
+        <IconBrand item-status="facebook" />
       </div>
       <div class="form">
         <FormItemInput v-model="name" placeholder="ユーザー名" type="text" />
@@ -33,7 +33,7 @@
     </div>
     <div class="button">
       <nuxt-link to="/login" class="link">代わりにログイン</nuxt-link>
-      <FormItemButton type="submit" @click="register" label="次へ" />
+      <FormItemButton type="submit" label="次へ" @click="register" />
     </div>
   </form>
 </template>

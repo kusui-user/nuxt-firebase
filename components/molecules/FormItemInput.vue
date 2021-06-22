@@ -2,10 +2,10 @@
   <div class="form-item form-item-input">
     <input
       v-bind="$attrs"
-      @input="$emit('input', $event.targe.value)"
       :class="{ samall: itemStatus === 'small' }"
       :placeholder="placeholder"
       class="input"
+      @input="$emit('input', $event.targe.value)"
     />
   </div>
 </template>
