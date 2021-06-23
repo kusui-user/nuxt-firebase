@@ -1,5 +1,5 @@
 <template>
-  <div class="icon icon-brand">
+  <div class="icon icon-brand" @click="$emit('click')">
     <img
       v-if="itemStatus === 'twitter'"
       class="icon icon-brand-twitter"

@@ -3,7 +3,7 @@
     <FormItemIcon :img="postData.thumbnail" type="file" @change="changeImg()" />
     <div class="content">
       <div class="sns">
-        <IconBrand item-status="google" />
+        <IconBrand item-status="google" @click="loginGoogle" />
         <IconBrand item-status="twitter" />
         <IconBrand item-status="facebook" />
       </div>
