@@ -8,7 +8,7 @@
     />
     <div class="button">
       <nuxt-link to="/register" class="link">アカウントを作成</nuxt-link>
-      <FormItemButton type="submit" label="次へ" @click="logint" />
+      <FormItemButton type="submit" label="次へ" @click="login" />
     </div>
   </form>
 </template>

@@ -5,7 +5,7 @@
       :class="{ samall: itemStatus === 'small' }"
       :placeholder="placeholder"
       class="input"
-      @input="$emit('input', $event.targe.value)"
+      @input="$emit('input', $event.target.value)"
     />
   </div>
 </template>
