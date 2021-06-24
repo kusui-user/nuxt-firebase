@@ -10,7 +10,7 @@
       <div class="form">
         <FormItemInput v-model="name" placeholder="ユーザー名" type="text" />
         <FormItemInput
-          v-model="mail"
+          v-model="email"
           placeholder="メールアドレス"
           type="email"
         />
@@ -113,7 +113,9 @@ export default {
         align-items: center;
         justify-content: center;
 
-        > .icon-brand-google {
+        > .icon-brand-google,
+        .icon-brand-twitter,
+        .icon-brand-facebook {
           width: 32px;
           height: 32px;
         }
@@ -127,21 +129,19 @@ export default {
         margin-top: 8px;
       }
 
+      > .placeholder {
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+
       > .input {
-        > .input {
-          margin-top: 8px;
-          display: flex;
-          justify-content: space-between;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
 
-          > .form-item-input {
-            width: calc(50% - 4px);
-          }
-        }
-
-        > .placeholder {
-          font-size: 12px;
-          line-height: 18px;
-          color: rgba(0, 0, 0, 0.4);
+        > .form-item-input {
+          width: calc(50% - 4px);
         }
       }
     }
