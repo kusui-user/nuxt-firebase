@@ -1,5 +1,11 @@
 <template>
-  <div class="view view-chat"></div>
+  <div class="view view-chat">
+    <div class="top">
+      <p class="title">チャット</p>
+    </div>
+    <ListChat />
+    <FormChat />
+  </div>
 </template>
 
 <script>

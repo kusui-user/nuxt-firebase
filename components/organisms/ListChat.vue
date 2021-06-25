@@ -1,5 +1,12 @@
 <template>
-  <ul class="list list-chat"></ul>
+  <ul class="list list-chat">
+    <li
+      is="ListItemChat"
+      v-for="message in messages"
+      :key="message.id"
+      :messages="message"
+    ></li>
+  </ul>
 </template>
 
 <script>

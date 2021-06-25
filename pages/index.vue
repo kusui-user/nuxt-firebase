@@ -2,6 +2,7 @@
   <div class="page">
     <NavHeader />
     <div class="container">
+      <ViewChat />
       <ViewTask />
     </div>
   </div>

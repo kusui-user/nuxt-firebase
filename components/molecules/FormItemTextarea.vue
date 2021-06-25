@@ -1,4 +1,9 @@
-<template></template>
+<template>
+  <textarea
+    class="form-item form-item-textarea"
+    placeholder="メッセージ"
+  ></textarea>
+</template>
 
 <script>
 export default {

@@ -1,5 +1,8 @@
 <template>
-  <div class="form form-chat"></div>
+  <div class="form form-chat">
+    <FormItemTextarea />
+    <FormItemButton label="送信" />
+  </div>
 </template>
 
 <script>
