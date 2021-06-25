@@ -1,5 +1,8 @@
 <template>
-  <li class="list-item list-item-task"></li>
+  <li class="list-item list-item-task">
+    <FormItemInputCheck />
+    <p class="text">{{ text }}</p>
+  </li>
 </template>
 
 <script>
@@ -9,6 +12,10 @@ export default {
       type: Object,
       // default: {},
     },
+    // text: {
+    //   type: String,
+    //   default: '',
+    // },
   },
   data() {
     return {

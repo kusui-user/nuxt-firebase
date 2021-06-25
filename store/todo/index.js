@@ -31,7 +31,7 @@ export const actions = {
       const todos = []
       querySnapshot.forEach((doc) => {
         const data = doc.data()
-        console.log(data)
+        console.log(data) //eslint-disable-line
         todos.push(data)
       })
       commit('setData', todos)

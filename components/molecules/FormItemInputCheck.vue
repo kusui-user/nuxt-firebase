@@ -1,5 +1,8 @@
 <template>
-  <label class="form-item form-item-input-check"> </label>
+  <label class="form-item form-item-input-check">
+    <div class="mark"></div>
+    <input type="checkbox" class="input" @input="$emit('switch')" />
+  </label>
 </template>
 
 <script>

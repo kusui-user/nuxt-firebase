@@ -3,7 +3,7 @@
     <div class="top">
       <p class="title">タスク</p>
     </div>
-    <!-- <ListTask /> -->
+    <ListTask />
     <FormTask />
   </div>
 </template>
