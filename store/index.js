@@ -99,6 +99,20 @@ export const actions = {
   //     console.log(error) //eslint-disable-line
   //   }
   // },
+  // async submitTask({ context }, task) {
+  //   await this.$fire.firestore
+  //     .collection('task')
+  //     .doc()
+  //     .set({
+  //       task: { task },
+  //     })
+  //     .then(() => {
+  //       console.log('成功') //eslint-disable-line
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error writing document: ", error) //eslint-disable-line
+  //     })
+  // },
 }
 
 export const mutations = {
