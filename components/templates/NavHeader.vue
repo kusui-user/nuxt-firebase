@@ -1,5 +1,8 @@
 <template>
-  <div class="nav nav-header"></div>
+  <div class="nav nav-header">
+    <h1 class="title">WeAre</h1>
+    <IconUser :image="image" />
+  </div>
 </template>
 
 <script>
