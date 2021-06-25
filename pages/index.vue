@@ -1,5 +1,10 @@
 <template>
-  <div class="page"></div>
+  <div class="page">
+    <NavHeader />
+    <div class="container">
+      <ViewTask />
+    </div>
+  </div>
 </template>
 
 <script>
