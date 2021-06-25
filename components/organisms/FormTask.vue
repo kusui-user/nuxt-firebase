@@ -1,5 +1,13 @@
 <template>
-  <div class="form form-task"></div>
+  <div class="form form-task">
+    <FormItemInput
+      v-model="task"
+      itemStatus="small"
+      type="text"
+      placeholder="タスク名"
+    />
+    <FormItemButton label="送信" @click="submitTask" />
+  </div>
 </template>
 
 <script>
