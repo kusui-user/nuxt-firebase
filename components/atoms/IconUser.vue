@@ -1,5 +1,8 @@
 <template>
-  <div class="icon icon-user"></div>
+  <div class="icon icon-user">
+    <img v-if="!!image" :src="image" alt="" class="image" />
+    <img v-else src="/atoms/icons/user.jpg" alt="" class="image" />
+  </div>
 </template>
 
 <script>
