@@ -5,6 +5,8 @@
       v-for="message in messages"
       :key="message.id"
       :messages="message"
+      :image="image"
+      :name="name"
     ></li>
   </ul>
 </template>

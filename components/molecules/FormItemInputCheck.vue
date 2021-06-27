@@ -1,7 +1,12 @@
 <template>
   <label class="form-item form-item-input-check">
-    <div class="mark"></div>
-    <input type="checkbox" class="input" @input="$emit('switch')" />
+    <input
+      :checked="checked"
+      type="checkbox"
+      class="input"
+      @input="$emit('switch', $event.target.checked)"
+    />
+    <span class="mark"></span>
   </label>
 </template>
 

@@ -1,5 +1,12 @@
 <template>
-  <li class="list-item list-item-chat"></li>
+  <li class="list-item list-item-chat">
+    <IconUser :image="image" />
+    <div class="content">
+      <p class="name">{{ messages.name }}</p>
+      <time class="time">{{ $dayjs(messages.time).format('YYYY.MM.DD') }}</time>
+      <p class="text">{{ messages.text }}</p>
+    </div>
+  </li>
 </template>
 
 <script>

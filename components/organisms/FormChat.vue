@@ -1,7 +1,7 @@
 <template>
   <div class="form form-chat">
-    <FormItemTextarea />
-    <FormItemButton label="送信" />
+    <FormItemTextarea v-model="text" type="text" item-status="small" />
+    <FormItemButton label="送信" @click="submitChat" />
   </div>
 </template>
 

@@ -3,7 +3,7 @@
     <div class="top">
       <p class="title">チャット</p>
     </div>
-    <ListChat />
+    <ListChat :image="image" />
     <FormChat />
   </div>
 </template>

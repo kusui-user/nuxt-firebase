@@ -2,7 +2,7 @@
   <div class="page">
     <NavHeader />
     <div class="container">
-      <ViewChat />
+      <ViewChat :image="image" />
       <ViewTask />
     </div>
   </div>

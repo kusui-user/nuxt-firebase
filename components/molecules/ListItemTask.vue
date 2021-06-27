@@ -1,7 +1,7 @@
 <template>
   <li class="list-item list-item-task">
-    <FormItemInputCheck />
-    <p class="text">{{ text }}</p>
+    <FormItemInputCheck v-model="isChecked" />
+    <p class="text">{{ todos }}</p>
   </li>
 </template>
 

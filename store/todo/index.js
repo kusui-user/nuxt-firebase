@@ -23,7 +23,7 @@ export const actions = {
   async getData({ commit }) {
     try {
       const user = this.$fire.auth.currentUser
-      console.log(user.uid)
+      console.log(user.uid) //eslint-disable-line
       const querySnapshot = await this.$fire.firestore
         .collection('task')
         .where('uid', '==', user.uid)
@@ -36,7 +36,7 @@ export const actions = {
       })
       commit('setData', todos)
     } catch (error) {
-      console.log(error)
+      console.log(error) //eslint-disable-line
     }
   },
 }

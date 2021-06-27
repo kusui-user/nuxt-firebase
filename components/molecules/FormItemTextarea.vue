@@ -1,7 +1,10 @@
 <template>
   <textarea
+    v-bind="$attrs"
+    :class="{ small: itemStatus === small }"
     class="form-item form-item-textarea"
     placeholder="メッセージ"
+    @input="$emit('input', $event.target.value)"
   ></textarea>
 </template>
 
