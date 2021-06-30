@@ -21,7 +21,7 @@
             type="password"
           />
           <FormItemInput
-            v-model="password"
+            v-model="passwordCheck"
             placeholder="パスワード(確認)"
             type="password"
           />
