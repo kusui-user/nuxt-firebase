@@ -1,6 +1,6 @@
 <template>
   <form class="form form-register-profile" @submit.prevent>
-    <FormItemIcon :img="postData.thumbnail" type="file" @change="changeImg()" />
+    <FormItemIcon :img="postData.thumbnail" type="file" @change="changeImg" />
     <div class="content">
       <div class="sns">
         <IconBrand item-status="google" @click="loginGoogle" />
