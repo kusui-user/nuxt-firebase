@@ -2,7 +2,7 @@
   <div class="form form-task">
     <FormItemInput
       v-model="task"
-      itemStatus="small"
+      item-status="small"
       type="text"
       placeholder="タスク名"
     />

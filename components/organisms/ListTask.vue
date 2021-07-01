@@ -1,8 +1,11 @@
 <template>
   <ul class="list list-task">
-    <li is="ListItemTask" v-for="todo in todos" :key="todo.id" :text="todo">
-      {{ todo.todo }}
-    </li>
+    <li
+      is="ListItemTask"
+      v-for="todo in todos"
+      :key="todo.id"
+      :todos="todo"
+    ></li>
   </ul>
 </template>
 
@@ -13,10 +16,10 @@ export default {
       return this.$store.getters.user
     },
     todos() {
-      return this.$store.getters['todo/todos'].filter((e) => {
-        return e.uid === this.user.uid
-      }) //eslint-disable-line
-      // return this.$store.getters['todo/todos']
+      // return this.$store.getters['todo/todos'].filter((e) => {
+      //   return e.uid === this.user.uid
+      // }) //eslint-disable-line
+      return this.$store.getters['todo/todos']
       // return this.$sotre.dispatch('getData')
     },
   },

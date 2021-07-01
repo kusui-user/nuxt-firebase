@@ -1,7 +1,7 @@
 <template>
   <li class="list-item list-item-task">
     <FormItemInputCheck v-model="isChecked" />
-    <p class="text">{{ todos }}</p>
+    <p class="text">{{ todo.task }}</p>
   </li>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   props: {
     todos: {
       type: Object,
-      // default: {},
+      // default: {''},
     },
     // text: {
     //   type: String,
