@@ -2,9 +2,9 @@
   <ul class="list list-task">
     <li
       is="ListItemTask"
-      v-for="todo in todos"
+      v-for="todo in todos2"
       :key="todo.id"
-      :todos2="todo"
+      :todos="todo"
     ></li>
   </ul>
 </template>
@@ -15,7 +15,7 @@ export default {
     user() {
       return this.$store.getters.user
     },
-    todos() {
+    todos2() {
       // return this.$store.getters['todo/todos'].filter((e) => {
       //   return e.uid === this.user.uid
       // }) //eslint-disable-line
