@@ -4,7 +4,7 @@
       is="ListItemTask"
       v-for="todo in todos"
       :key="todo.id"
-      :todos="todo"
+      :todos2="todo"
     ></li>
   </ul>
 </template>

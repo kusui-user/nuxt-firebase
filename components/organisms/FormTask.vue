@@ -6,7 +6,7 @@
       type="text"
       placeholder="タスク名"
     />
-    <FormItemButton label="送信" @click="submitTask" />
+    <FormItemButton label="送信" @click="submitTask()" />
   </div>
 </template>
 

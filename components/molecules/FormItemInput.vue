@@ -2,7 +2,7 @@
   <div class="form-item form-item-input">
     <input
       v-bind="$attrs"
-      :class="{ samall: itemStatus === 'small' }"
+      :class="{ small: itemStatus === 'small' }"
       :placeholder="placeholder"
       class="input"
       @input="$emit('input', $event.target.value)"
