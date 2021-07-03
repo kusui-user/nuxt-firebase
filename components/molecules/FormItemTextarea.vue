@@ -11,6 +11,10 @@
 <script>
 export default {
   props: {
+    value: {
+      type: String,
+      default: '',
+    },
     itemStatus: {
       type: String,
       required: false,
